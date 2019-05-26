@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font-weight: 5;
+}
+
+nav {
+  height: 50px;
+  background-color: #C12127;
+  color: rgba(255,255,255,0.8);
+}
+
+nav a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+header {
+  color: rgba(255,255,255,0.8);
+  background-image: url("images/city-scape.svg");
+  background-color: burlywood;
+  height: 500px;
+}
+
+header a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+header button {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin-left: 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+section {
+  height: 500px;
+}
+
+section div {
+  display: inline-block;
+}
+
+.colab-picture {
+  width: 100px;
+}
+
+.section1 {
+  background-color: antiquewhite;
+}
+
+.section2 {
+  background-color: aquamarine;
+}
+
+.section3 {
+  background-color: beige;
+}
+
+
+.bear-logo {
+  width: 27px;
+}
+
+.bear-line {
+  width: 180px;
+  display: inline-block;
+}
+
+.bear-line li {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.sub-input-line {
+  width: 1200px;
+  height: 60px;
+  /* padding: 10px 0; */
+  display: inline-block;
+}
+
+.input-line {
+  display: inline-block;
+  width: 100%;
+}
+
+.input {
+  display: inline-block;
+  width: 1000px;
+  height: 40px;
+}
+
+.logo {
+  width: 100px;
+  margin: 10px 15px;
+}
+
+.top-links {
+  float: right;
+  padding: 0;
+  margin-right: auto;
+}
+
+.top-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.top-left {
+  float: left;
+  margin: 15px;
+}
+
