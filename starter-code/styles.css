@@ -27,11 +27,23 @@ header a {
   text-decoration: none;
 }
 
+header i {
+  color: white;
+}
+
 header button {
   display: inline-block;
   height: 40px;
   width: 40px;
   margin-left: 0;
+  background-color: #2f4d6a;
+  border: 2px solid #365a7c;
+  
+}
+
+header input {
+  background-color: #2f4d6a;
+  border: 2px solid #365a7c;
 }
 
 h1 {
