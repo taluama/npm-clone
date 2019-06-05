@@ -1,130 +1,269 @@
-* {
+/* * {
   box-sizing: border-box;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   font-weight: 5;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', 'Montserrat', sans-serif;
+  color: white;
 }
 
-nav {
+.margin-block-issue {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.top-left {
+  display: flex;
+  justify-content: space-between;
+  float: left;
+  margin-left: auto;
+  padding: 15px 0 0 15px;
+}
+
+.top-left-2 {
+  display: flex;
+  justify-content: space-between;
+  float: left;
+  margin-left: auto;
+  padding: 10px 0 0 15px;
+}
+
+.buildings-background {
+  color: rgba(255,255,255,0.8);
+  background-image: url("images/city-scape.svg");
+  height: 550px;
+}
+
+.red-background {
   height: 50px;
   background-color: #C12127;
   color: rgba(255,255,255,0.8);
 }
 
-nav a {
+.plain {
   color: rgba(255,255,255,0.8);
   text-decoration: none;
 }
 
-header {
-  color: rgba(255,255,255,0.8);
-  background-image: url("images/city-scape.svg");
-  background-color: burlywood;
-  height: 500px;
-}
-
-header a {
-  color: rgba(255,255,255,0.8);
-  text-decoration: none;
-}
-
-header i {
-  color: white;
-}
-
-header button {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  margin-left: 0;
-  background-color: #2f4d6a;
-  border: 2px solid #365a7c;
-  
-}
-
-header input {
-  background-color: #2f4d6a;
-  border: 2px solid #365a7c;
-}
-
-h1 {
-  font-size: 3em;
-}
-
-section {
-  height: 500px;
-}
-
-section div {
-  display: inline-block;
-}
-
-.colab-picture {
-  width: 100px;
-}
-
-.section1 {
-  background-color: antiquewhite;
-}
-
-.section2 {
-  background-color: aquamarine;
-}
-
-.section3 {
-  background-color: beige;
-}
-
-
-.bear-logo {
-  width: 27px;
-}
-
-.bear-line {
-  width: 180px;
-  display: inline-block;
-}
-
-.bear-line li {
-  text-decoration: none;
-  display: inline-block;
-}
-
-.sub-input-line {
-  width: 1200px;
-  height: 60px;
-  /* padding: 10px 0; */
-  display: inline-block;
-}
-
-.input-line {
-  display: inline-block;
-  width: 100%;
-}
-
-.input {
-  display: inline-block;
-  width: 1000px;
-  height: 40px;
+.nav-padding {
+  padding-right:25px;
 }
 
 .logo {
-  width: 100px;
-  margin: 10px 15px;
+  height: 50px;
+  padding-right: 25px;
 }
 
 .top-links {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
   float: right;
   padding: 0;
   margin-right: auto;
 }
 
-.top-links li {
-  display: inline-block;
-  margin: 0 10px;
+.input {
+  background-color: #1c5474;
+  border: 2px solid #4c708c;
 }
 
-.top-left {
-  float: left;
-  margin: 15px;
+.input-2 {
+  width: 980px;
+  border-right: 3px solid #4c708c;
 }
 
+.input-3 {
+  height: 50px;
+  width: 50px;
+  border-left: none;
+}
+
+.fa-search {
+  color: white;
+}
+
+.bear-logo {
+  height: 30px;
+  margin: 5px 30px 0 5px;
+}
+
+::placeholder {
+  font-size: 1.2rem;
+  font-weight: 100;
+  padding-left: 10px;
+  color: #647380;
+}
+
+.sign-up-or-login {
+  font-size: 1.1rem;
+  font-weight: 100;
+  margin-top: 10px;
+}
+
+.container-2 {
+  padding: 0 8%;
+}
+
+.build-amazing-things {
+  padding: 14% 0 0 7%;
+}
+
+.build-amazing-things > h1 {
+  font-weight: 100;
+  font-size: 3.2rem;
+  padding-bottom: 25px;
+}
+
+.build-amazing-things > p {
+  font-size: 1.2rem;
+  padding-bottom: 30px;
+}
+
+.sign-up-btn {
+  background: #f49434;
+  font-size: 1.3rem;
+  border-radius: 30px;
+  padding: .5em 1.3em;
+}
+
+.colab-picture {
+  padding: 135px 30px 0 0;
+  width: 430px;
+}
+
+.colab-info {
+  padding-top: 100px;
+}
+
+.colab-info > h2 {
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+.list-style {
+  list-style-type: none;
+}
+
+.list-style-2 {
+  list-style-type: disc;
+  line-height: 2em;
+  font-size: 1.3rem;
+  padding-bottom: 2rem;
+}
+
+.section-2 {
+  background: #243444;
+  height: 575px;
+  /* margin-bottom: 100px;
+  z-index: 6; */
+}
+
+.side-by-side {
+  display: flex;
+  justify-content: space-between;
+  /* float: right;
+  margin-right: auto; */
+}
+
+.colab-info > .sign-up-btn {
+  background: #cc343c;
+}
+
+.colab-info > p {
+  padding-top: .8rem;
+  font-size: 1.1rem;
+}
+
+.section-3 {
+  background: url("images/forklift.svg");
+  background-position: 0 -50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+}
+
+.section-3 .sign-up-btn {
+  background: #34445c;
+}
+
+.section-3 div {
+  padding: 105px 0 0 15px;
+}
+
+.section-3 h2 {
+  font-size: 2.7rem;
+  font-weight: 100;
+  padding-bottom: 1rem;
+}
+
+.section-3 p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.section-3b {
+  height: 150px;
+  background: rgb(32, 111, 156);
+  margin-top: -50px;
+}
+
+.section-4 {
+  height: 500px;
+  color: rgba(0, 0, 0, 0.651);
+}
+
+.section-4 a {
+  color: rgb(202, 31, 31);
+  text-decoration: none;
+}
+
+.section-4 ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.section-4 li {
+  text-align: center;
+}
+
+.section-4 .discover {
+  margin: 0 8%;
+}
+
+.section-4 img {
+  width: 140px;
+}
+
+.section-4 h3 {
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-top: 0;
+}
+
+.section-4 p {
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.555);
+}
+
+.find h3 {
+  margin-left: -5px;
+}
+
+.blocks-info {
+  text-align: center;
+  padding: 45px 0 15px;
+}
+
+.blocks-info-title {
+  font-family: sans-serif;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
