@@ -223,18 +223,24 @@ body {
   text-decoration: none;
 }
 
-.section-4 ul {
+/* .section-4 ul {
   display: flex;
   align-items: center;
   list-style-type: none;
+} */
+
+.section-4 ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.section-4 .discover {
+  margin: 0 auto;
 }
 
 .section-4 li {
   text-align: center;
-}
-
-.section-4 .discover {
-  margin: 0 8%;
 }
 
 .section-4 img {
@@ -250,10 +256,6 @@ body {
 .section-4 p {
   font-size: 1.1rem;
   color: rgba(0, 0, 0, 0.555);
-}
-
-.find h3 {
-  margin-left: -5px;
 }
 
 .blocks-info {
