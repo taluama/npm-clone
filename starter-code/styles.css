@@ -223,12 +223,6 @@ body {
   text-decoration: none;
 }
 
-/* .section-4 ul {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-} */
-
 .section-4 ul {
   display: flex;
   flex-wrap: wrap;
