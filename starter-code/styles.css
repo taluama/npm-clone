@@ -5,17 +5,42 @@ body {
   color: white;
 }
 
-.margin-block-issue {
-  margin-block-end: 0;
-  margin-block-start: 0;
-}
-
 .top-left {
   display: flex;
   justify-content: space-between;
   float: left;
   margin-left: auto;
   padding: 1rem 0 0 15px;
+}
+
+.top-links {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul {
+  position: fixed;
+  top: 0;
+  right: 0;
+  text-align: left;
+  background: rgb(74, 111, 139, 0.7);
+  width: 60%;
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+nav li {
+  padding: 1rem;
+}
+
+.nav-hover:hover {
+  background: rgb(74, 111, 139);
+}
+
+.exit-btn {
+  text-align: right;
+  padding: .5rem;
+  margin: .6rem 1.7rem 0 0;
 }
 
 .heart {
@@ -30,9 +55,14 @@ body {
   padding: 10px 0 0 15px;
 }
 
+.container-1 {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .buildings-background {
   background-image: url("images/city-scape.svg");
-  height: 550px;
+  height: 400px;
 }
 
 .red-background {
@@ -57,8 +87,8 @@ body {
 }
 
 .logo {
-  height: 50px;
-  padding: 5px 25px 0 5px;
+  height: 42px;
+  padding: 7px 20px 0 0;
 }
 
 .second-header {
@@ -66,23 +96,22 @@ body {
   display: flexbox;
 }
 
-.top-links {
+.form {
+  float: left;
+  padding-top: 10px;
   display: flex;
-  justify-content: space-between;
+  width: calc(100% - 240px);
+}
+
+.bear-logo {
+  height: 50px;
+  margin-top: -.4rem;
+  padding-right: 1rem;
+}
+
+.bear-link {
   list-style-type: none;
   float: right;
-  padding: 0;
-  margin-right: auto;
-}
-
-.top-links-margin {
-  margin-top: -35px;
-}
-
-.form {
-  padding-top: 15px;
-  display: flex;
-  width: 72%;
 }
 
 .input {
@@ -106,59 +135,62 @@ body {
   color: white;
 }
 
-.bear-logo {
-  height: 30px;
-  margin: -1px 30px 0 5px;
-}
-
 ::placeholder {
+  opacity: 1;
   font-size: 1.2rem;
   font-weight: 100;
   padding-left: 10px;
   color: #647380;
 }
 
-.sign-up-or-login {
-  color: rgba(255,255,255,0.8);
-  font-size: 1.1rem;
-}
-
-.container-2 {
-  padding: 0 8%;
-}
-
-.build-amazing-things {
-  padding: 10% 0 0 7%;
+.exit-btn img {
+  cursor: pointer;
 }
 
 .build-amazing-things > h1 {
-  font-weight: 100;
-  font-size: 3.4rem;
-  padding-bottom: 1rem;
+  text-align: left;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 2.7rem;
+  padding: 19rem 0 .4rem 7%;
+}
+
+.margin-block-issue {
+  margin-block-end: 0;
+  margin-block-start: 0;
 }
 
 .build-amazing-things > p {
+  width: 65%;
+  text-align: left;
   font-family: sans-serif;
-  line-height: 1.3em;
-  font-size: 1.4rem;
+  line-height: 1.5em;
+  font-size: 1.1rem;
   font-weight: 100;
-  padding-bottom: 30px;
+  padding: 0 7% 25px 12%;
 }
 
 .sign-up-btn {
   background: #f49434;
-  font-size: 1.3rem;
+  width: calc(100% - 3em);
+  display: block;
   border-radius: 30px;
-  padding: .5em 1.3em;
+  padding: .5em;
+  font-size: 1.3rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section-1b {
+  height: 350px;
+  background: rgb(29, 78, 105);
+  margin-top: -60px;
 }
 
 .colab-picture {
-  padding: 135px 50px 0 0;
+  padding: 70px 0 0;
   width: 430px;
-}
-
-.colab-info {
-  padding-top: 90px;
 }
 
 .colab-info > h2 {
@@ -169,46 +201,46 @@ body {
 
 .section-2 > ul {
   list-style-type: none;
-  display: flex;
 }
 
 .colab-info > ul {
   list-style-type: disc;
   line-height: 2em;
-  font-size: 1.4rem;
+  font-size: 1rem;
+  margin-left: -1.2rem;
   padding-bottom: 2rem;
 }
 
 .section-2 {
   background: #243444;
-  height: 575px;
+  height: 770px;
 }
 
 .colab-info > .sign-up-btn {
   background: #cc343c;
+  margin-left: 0;
+  text-align: center;
 }
 
 .colab-info > p {
-  padding-top: .8rem;
+  text-align: right;
+  margin: -.05rem 10% 0 0;
   font-size: 1.1rem;
 }
 
 .section-3 {
   background: url("images/forklift.svg");
-  background-position: 0 -50px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 550px;
+  height: 475px;
 }
 
 .section-3 div {
-  padding: 105px 0 0 15px;
+  padding: 105px 3% 0;
 }
 
 .section-3 h2 {
   font-family: sans-serif;
-  font-size: 2.7rem;
-  font-weight: 300;
+  font-size: 2.4rem;
+  font-weight: 400;
   padding-bottom: 1rem;
 }
 
@@ -216,8 +248,8 @@ body {
   font-family: sans-serif;
   font-weight: 200;
   font-size: 1.2rem;
-  line-height: 1.6rem;
-  padding-bottom: 1rem;
+  line-height: 1.7rem;
+  padding: 2rem;
 }
 
 .section-3 .sign-up-btn {
@@ -225,12 +257,7 @@ body {
   font-family: sans-serif;
   font-weight: 300;
   font-size: 1.3rem;
-}
-
-.section-3b {
-  height: 150px;
-  background: rgb(32, 111, 156);
-  margin-top: -50px;
+  text-align: center;
 }
 
 .section-4 {
@@ -246,8 +273,6 @@ body {
 }
 
 .section-4 ul {
-  display: flex;
-  flex-wrap: wrap;
   list-style-type: none;
   padding-inline-start: 0;
 }
@@ -258,6 +283,7 @@ body {
 
 .section-4 li {
   text-align: center;
+  padding-bottom: 1.5rem;
 }
 
 .section-4 img {
@@ -281,11 +307,211 @@ body {
 }
 
 .blocks-info h2 {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   font-weight: bolder;
   margin-bottom: 1rem;
 }
 
 .blocks-info p {
   font-size: 1.2rem;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+.menu {
+  float: right;
+  width: 25px;
+  margin: 1rem 1.5rem 0 0;
+}
+
+br {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+
+  br {
+    display: inherit;
+  }
+
+  .container-2 {
+    padding: 0 8%;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+
+  .show-desktop {
+    display: inherit;
+  }
+
+  .top-links {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    float: right;
+    padding: 0;
+    margin-right: auto;
+  }
+
+
+  nav ul {
+    position: inherit;
+    background: inherit;
+    width: fit-content;
+    font-size: inherit;
+  }
+  
+  nav li {
+    padding: 1rem 0 0;
+  }
+  
+  .nav-hover:hover {
+    background: inherit;
+  }
+  
+  .bear-link {
+    padding: .4rem 0 0 1rem;
+  }
+
+  .bear-logo {
+    height: 30px;
+    margin: -1px 20px 0 5px;
+  }
+
+  .sign-up-or-login {
+    color: rgba(255,255,255,0.8);
+    font-size: 1.1rem;
+  }
+
+  .sign-up-or-login span {
+    padding: 0 .5rem;
+  }
+
+  .logo {
+    height: 50px;
+    padding: 3px 25px 0 5px;
+  }
+
+  .form {
+    width: calc(100% - 410px);
+  }
+
+  .container-1 {
+    margin: 0;
+    text-align: inherit;
+  }
+
+  .section-1b {
+    display: none;
+  }
+
+  .buildings-background {
+    height: 550px;
+  }
+
+  .build-amazing-things > h1 {
+    font-family: inherit;
+    color: inherit;
+    font-weight: 100;
+    font-size: 3.4rem;
+    padding: 0 0 1rem 0;
+  }
+
+  .build-amazing-things > p {
+    width: 100%;
+    font-family: inherit;
+    line-height: 1.3em;
+    font-size: 1.4rem;
+    font-weight: inherit;
+    padding: 0 0 0 0;
+  }
+
+  .sign-up-btn {
+    padding: .5em 1.3em;
+    margin: 0;
+    position: inherit;
+    width: fit-content;
+    display: inherit;
+  }
+
+  .build-amazing-things {
+    padding: 10% 0 0 7%;
+  }
+
+  .colab-picture {
+    padding: 135px 50px 0 0;
+  }
+
+  .section-2 {
+    height: 575px;
+  }
+
+  .section-2 > ul {
+    display: flex;
+  }
+
+  .colab-info {
+    padding-top: 90px;
+  }
+
+  .colab-info > ul {
+    font-size: 1.4rem;
+    margin-left: 0;
+  }
+
+  .colab-info > p {
+    text-align: inherit;
+    margin: 0;
+    padding-top: .8rem;
+  }
+
+  .colab-info > .sign-up-btn {
+    margin-left: inherit;
+  }
+
+  .section-3 {
+    background-position: 0 -50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+  }
+
+  .section-3 h2 {
+    font-size: 2.7rem;
+    font-weight: 300;
+  }
+
+  .section-3 p {
+    line-height: 1.6rem;
+    padding: 0 0 1rem 0;
+  }
+
+  .section-3 .sign-up-btn {
+    margin-left: inherit;
+    text-align: inherit;
+  }
+
+  .section-3b {
+    height: 150px;
+    background: rgb(32, 111, 156);
+    margin-top: -50px;
+  }
+
+  .blocks-info h2 {
+    font-size: 1.7rem;
+  }
+
+  .section-4 ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .section-4 li {
+    padding-bottom: 0;
+  }
+
 }
