@@ -62,6 +62,7 @@ nav li {
 
 .buildings-background {
   background-image: url("images/city-scape.svg");
+  background-color: rgb(29, 78, 105);
   height: 400px;
 }
 
@@ -330,188 +331,362 @@ br {
   display: none;
 }
 
-@media only screen and (min-width: 1024px) {
-
-  br {
-    display: inherit;
-  }
-
-  .container-2 {
-    padding: 0 8%;
-  }
-
-  .hide-desktop {
-    display: none;
-  }
-
-  .show-desktop {
-    display: inherit;
-  }
-
-  .top-links {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    float: right;
-    padding: 0;
-    margin-right: auto;
-  }
-
-
-  nav ul {
-    position: inherit;
-    background: inherit;
-    width: fit-content;
-    font-size: inherit;
-  }
-  
-  nav li {
-    padding: 1rem 0 0;
-  }
-  
-  .nav-hover:hover {
-    background: inherit;
-  }
-  
-  .bear-link {
-    padding: .4rem 0 0 1rem;
-  }
-
-  .bear-logo {
-    height: 30px;
-    margin: -1px 20px 0 5px;
-  }
-
-  .sign-up-or-login {
-    color: rgba(255,255,255,0.8);
-    font-size: 1.1rem;
-  }
-
-  .sign-up-or-login span {
-    padding: 0 .5rem;
-  }
-
-  .logo {
-    height: 50px;
-    padding: 3px 25px 0 5px;
-  }
-
-  .form {
-    width: calc(100% - 410px);
-  }
-
-  .container-1 {
-    margin: 0;
-    text-align: inherit;
-  }
-
-  .section-1b {
-    display: none;
-  }
-
-  .buildings-background {
-    height: 550px;
-  }
-
-  .build-amazing-things > h1 {
-    font-family: inherit;
-    color: inherit;
-    font-weight: 100;
-    font-size: 3.4rem;
-    padding: 0 0 1rem 0;
-  }
-
-  .build-amazing-things > p {
-    width: 100%;
-    font-family: inherit;
-    line-height: 1.3em;
-    font-size: 1.4rem;
-    font-weight: inherit;
-    padding: 0 0 0 0;
-  }
-
-  .sign-up-btn {
-    padding: .5em 1.3em;
-    margin: 0;
-    position: inherit;
-    width: fit-content;
-    display: inherit;
-  }
+@media only screen and (min-width: 632px){
 
   .build-amazing-things {
-    padding: 10% 0 0 7%;
+    padding-top: 20px;
   }
 
-  .colab-picture {
-    padding: 135px 50px 0 0;
+  .build-amazing-things h1 {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .build-amazing-things p {
+    text-align: center;
+    padding: 0 0 25px;
+    margin: 1em auto;
   }
 
   .section-2 {
-    height: 575px;
-  }
-
-  .section-2 > ul {
-    display: flex;
+    text-align: center;
   }
 
   .colab-info {
-    padding-top: 90px;
+    margin: .83em auto;
+      width: 80%;
   }
 
-  .colab-info > ul {
-    font-size: 1.4rem;
-    margin-left: 0;
+  .colab-info ul {
+    text-align: left;
+    padding-left: 6rem;
   }
 
-  .colab-info > p {
+  .section-2 .sign-up-btn {
     text-align: inherit;
-    margin: 0;
-    padding-top: .8rem;
   }
 
-  .colab-info > .sign-up-btn {
-    margin-left: inherit;
-  }
-
-  .section-3 {
-    background-position: 0 -50px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 550px;
+  .margin-block-issue {
+    padding: 0;
   }
 
   .section-3 h2 {
-    font-size: 2.7rem;
-    font-weight: 300;
+    padding: 2rem 0 0 2.5rem;
+    font-size: 3rem;
   }
 
   .section-3 p {
-    line-height: 1.6rem;
-    padding: 0 0 1rem 0;
+    width: 80%;
   }
 
-  .section-3 .sign-up-btn {
-    margin-left: inherit;
-    text-align: inherit;
+  .sign-up-btn {
+    width: calc(80% - 1rem);
   }
 
-  .section-3b {
-    height: 150px;
-    background: rgb(32, 111, 156);
-    margin-top: -50px;
+  .section-2 .sign-up-btn {
+    position: absolute;
   }
 
-  .blocks-info h2 {
-    font-size: 1.7rem;
+  .colab-info p {
+    margin-top: 3rem;
+  }
+
+  .section-3 p {
+    width: 70%;
+  }
+
+  .section-4 {
+    margin: 0;
+    text-align: center;
   }
 
   .section-4 ul {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .section-4 li {
-    padding-bottom: 0;
+    margin: 1rem auto;
+    width: 60%;
   }
 
 }
+
+  @media only screen and (min-width: 900px){
+
+    .build-amazing-things h1 {
+      font-family: inherit;
+      font-size: 4rem;
+      margin-top: -20px;
+    }
+
+    .section-2 .sign-up-btn {
+      position: relative;
+      margin: 0 auto;
+    }
+
+    .sign-up-btn {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      width: fit-content;
+    }
+
+    .colab-info p {
+      margin: .5rem auto;
+      text-align: center;
+    }
+
+    .section-3 p {
+      width: 60%;
+    }
+
+  }
+
+    @media only screen and (min-width: 1125px){
+
+      br {
+        display: inherit;
+      }
+
+      .container-2 {
+        padding: 0 8%;
+      }
+
+      .hide-desktop {
+        display: none;
+      }
+
+      .show-desktop {
+        display: inherit;
+      }
+
+      .top-links {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        float: right;
+        padding: 0;
+        margin-right: auto;
+      }
+
+      nav ul {
+        position: inherit;
+        background: inherit;
+        width: fit-content;
+        font-size: inherit;
+      }
+      
+      nav li {
+        padding: 1rem 0 0;
+      }
+      
+      .nav-hover:hover {
+        background: inherit;
+      }
+      
+      .bear-link {
+        padding: .4rem 0 0 1rem;
+      }
+
+      .bear-logo {
+        height: 30px;
+        margin: -1px 20px 0 5px;
+      }
+
+      .sign-up-or-login {
+        color: rgba(255,255,255,0.8);
+        font-size: 1.1rem;
+      }
+
+      .sign-up-or-login span {
+        padding: 0 .5rem;
+      }
+
+      .logo {
+        height: 50px;
+        padding: 3px 25px 0 5px;
+      }
+
+      .form {
+        width: calc(100% - 410px);
+      }
+
+      .container-1 {
+        margin: 0;
+        text-align: inherit;
+      }
+
+      .section-1b {
+        display: none;
+      }
+
+      .buildings-background {
+        height: 550px;
+      }
+
+      .build-amazing-things > h1 {
+        text-align: inherit;
+        font-family: inherit;
+        color: inherit;
+        font-weight: 100;
+        font-size: 3.3rem;
+        padding: 0 0 2.5rem 0;
+        transform: scale(1, 1.1);
+        -webkit-transform: scale(1, 1.1);
+        -moz-transform: scale(1, 1.1);
+        -ms-transform: scale(1, 1.1);
+        -o-transform: scale(1, 1.1);
+      }
+
+      .build-amazing-things > p {
+        text-align: inherit;
+        width: 100%;
+        font-family: inherit;
+        line-height: 1.3em;
+        font-size: 1.25rem;
+        font-weight: inherit;
+        margin: 0 0 3.5rem;
+        padding: 0 0 0 0;
+      }
+
+      .sign-up-btn {
+        padding: .5em 1.3em;
+        margin: 0;
+        position: inherit;
+        width: fit-content;
+        display: inherit;
+      }
+
+      .build-amazing-things {
+        padding: 10% 0 0 8%;
+      }
+
+      .colab-picture {
+        padding: 135px 50px 0 0;
+      }
+
+      .section-2 {
+        height: 650px;
+      }
+
+      .section-2 > ul {
+        display: flex;
+      }
+
+      .colab-info {
+        padding-top: 90px;
+      }
+
+      .colab-info > p {
+        text-align: inherit;
+        margin: 0;
+        padding-top: .8rem;
+      }
+
+      .colab-info > .sign-up-btn {
+        margin-left: inherit;
+      }
+
+      .section-3 {
+        background-position: 0 -50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 550px;
+      }
+
+      .section-3 h2 {
+        font-size: 2.7rem;
+        font-weight: 300;
+      }
+
+      .section-3 p {
+        line-height: 1.6rem;
+        padding: 0 0 1rem 0;
+      }
+
+      .section-3 .sign-up-btn {
+        margin-left: inherit;
+        text-align: inherit;
+      }
+
+      .section-3b {
+        height: 150px;
+        background: rgb(32, 111, 156);
+        margin-top: -50px;
+      }
+
+      .blocks-info h2 {
+        font-size: 1.9rem;
+        font-weight: bolder;
+        margin-bottom: 1rem;
+      }
+
+      .section-4 ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        /* margin: 0; */
+      }
+
+      .section-4 .discover {
+        margin: 0 auto;
+      }
+
+      .section-4 li {
+        text-align: inherit;
+        padding-bottom: 0;
+      }
+
+      .section-4 {
+        font-family: sans-serif;
+        height: 500px;
+        color: rgba(0, 0, 0, 0.651);
+        /* padding: 0 13%; */
+      }
+  
+      .section-4 .discover {
+        margin: 0 auto;
+      }
+      
+      .blocks-info {
+        text-align: center;
+        padding: 45px 0 15px;
+      }
+
+      .blocks-info p {
+        font-size: 1.2rem;
+      }
+
+    }
+
+      @media only screen and (min-width: 1342px) {
+
+        .build-amazing-things {
+          margin-top: 20px;
+        }
+
+        .colab-info {
+          text-align: left;
+        }
+
+        .colab-info .sign-up-btn {
+          margin: 0;
+        }
+
+        .section-2 {
+          height: 575px;
+        }
+
+        .colab-info > ul {
+          line-height: 2em;
+          font-size: 1.4rem;
+        }
+
+        .section-3 h2 {
+          padding-left: 0;
+        }
+
+        .section-3 div {
+          padding: 80px 0 0 0;
+        }
+
+        .section-4 {
+          padding: 0 calc(50% - 520px);
+        }
+
+      }
